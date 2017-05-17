@@ -7,11 +7,11 @@ mkdir $DIRNAME
 cd $DIRNAME
 
 if [[ $TRAVIS_OS_NAME == 'osx' ]]; then
-  curl -L -O http://ctan.math.washington.edu/tex-archive/systems/mac/mactex/BasicTeX.pkg
+  curl -L -O http://tug.org/cgi-bin/mactex-download/BasicTeX.pkg
   sudo installer -pkg BasicTeX.pkg -target /
   rm BasicTeX.pkg
   export PATH=$PATH:/Library/TeX/texbin
-  export PATH=$PATH:/usr/local/texlive/2016basic/bin/x86_64-darwin/
+ 
 else
   wget http://ctan.mirror.rafal.ca/systems/texlive/tlnet/install-tl-unx.tar.gz
   tar zxvf install-tl-unx.tar.gz
