@@ -7,7 +7,7 @@ mkdir $DIRNAME
 cd $DIRNAME
 
 if [[ $TRAVIS_OS_NAME == 'osx' ]]; then
-  curl -L -O http://tug.org/cgi-bin/mactex-download/BasicTeX.pkg
+  curl -L -O http://mirrors.acm.jhu.edu/ctan/systems/mac/mactex/mactex-basictex-20161009.pkg
   sudo installer -pkg BasicTeX.pkg -target /
   rm BasicTeX.pkg
   export PATH=$PATH:/Library/TeX/texbin
