@@ -11,7 +11,7 @@ if [[ $TRAVIS_OS_NAME == 'osx' ]]; then
   sudo installer -pkg BasicTeX.pkg -target /
   rm BasicTeX.pkg
   export PATH=$PATH:/Library/TeX/texbin
-  sudo /usr/local/texlive/2015/bin/x86_64-darwin/tlmgr path add
+  sudo /usr/local/texlive/2016/bin/x86_64-darwin/tlmgr path add
 else
   wget http://ctan.mirror.rafal.ca/systems/texlive/tlnet/install-tl-unx.tar.gz
   tar zxvf install-tl-unx.tar.gz
